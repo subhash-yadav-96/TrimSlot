@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.trimslot.mobile.v9'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.trimslot.mobile.v9'
+        minSdk 23
+        targetSdk 35
+        versionCode 7
+        versionName '1.7'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity:1.10.1'
+}

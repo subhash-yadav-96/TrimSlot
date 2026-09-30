@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:id="@+id/errorLayout"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:gravity="center" android:padding="32dp"
+        android:background="#FFFFFF" android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Unable to load TrimSlot" android:textSize="20sp"
+            android:textStyle="bold" android:textColor="#111111"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Please check your internet connection and try again."
+            android:textSize="15sp" android:textColor="#666666"
+            android:gravity="center" android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Retry"/>
+    </LinearLayout>
+</FrameLayout>
